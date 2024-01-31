@@ -36,8 +36,10 @@ body {
 }
 
 #imageDisplay {
-    text-align: center;
-    margin-bottom: 20px;
+    position: sticky;
+    top: 20px; /* Adjust this value as needed */
+    max-width: 300px; /* Adjust as per your requirement */
+    margin-right: 20px; /* Space between image and options */
 }
 
 .customization-section h3 {
@@ -72,6 +74,11 @@ body {
     text-align: center; /* Center the content */
 }
 /* Total Cost Display */
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px; /* or any suitable margin */
+}
 #totalCost {
     
     width: 100%; /* Full width of the screen */
@@ -170,7 +177,11 @@ select, input[type="checkbox"] {
 .button:hover {
     background-color: #0056b3;
 }
-
+.customization-section {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .customization-container,
@@ -178,6 +189,13 @@ select, input[type="checkbox"] {
         margin: 10px;
         padding: 10px;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    .flex-container {
+            flex-direction: column;}
+            #imageDisplay {
+                position: static; /* Normal flow on smaller screens */
+                max-width: 100%; /* Full width on smaller screens */
+                margin-right: 0;
+            }
     }
 
     .header {
@@ -196,5 +214,18 @@ select, input[type="checkbox"] {
 
     .title {
         font-size: 24px;
+    }
+    input[type="checkbox"] {
+        transform: scale(1.5); /* Makes checkboxes larger */
+        margin-right: 10px; /* Adds space to the right of checkboxes */
+    }
+    
+    /* Adjust label spacing and font size for better readability */
+    .customization-section label {
+        display: flex; /* Use flexbox */
+        align-items: center; /* Center align vertically */
+        margin-bottom: 15px; /* Spacing after each label */
+        font-size: 16px; /* Larger font size for readability */
+        text-align: justify;
     }
 }
