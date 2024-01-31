@@ -1,9 +1,15 @@
 /* General Body Styling */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+}
+.main-content {
+    flex: 1;
 }
 
 /* Header Styling */
@@ -58,11 +64,22 @@ body {
     bottom: 0;
     width: 100%;
 }
-
+#endOfOptions {
+    width: 100%; /* Full width of the screen */
+    padding: 20px 0; /* Padding top and bottom */
+    background-color: #f8f9fa; /* Light grey background */
+    border-top: 2px solid #007bff; /* Blue border top */
+    text-align: center; /* Center the content */
+}
 /* Total Cost Display */
 #totalCost {
-    margin-top: 20px;
-    font-weight: bold;
+    
+    width: 100%; /* Full width of the screen */
+    margin-top: 10px; /* Spacing at the top */
+    padding: 20px 0px; /* Padding for space around text */
+    background-color: white; /* White background for the cost area */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Basic Styling for Form Elements */
@@ -140,7 +157,16 @@ select, input[type="checkbox"] {
     font-size: 14px;
     transition: background-color 0.3s ease;
 }
+#totalCost h3 {
+    margin: 0; /* Remove default margin */
+    color: #333; /* Dark grey color for text */
+    font-size: 1.2rem; /* Slightly larger font size */
+}
 
+#price {
+    color: #007bff; /* Blue color to highlight the price */
+    font-weight: bold; /* Bold for emphasis */
+}
 .button:hover {
     background-color: #0056b3;
 }

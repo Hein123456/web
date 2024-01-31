@@ -5,16 +5,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalCost = document.getElementById('totalCost');
 
     window.addEventListener('scroll', () => {
-        const rect = endOfOptions.getBoundingClientRect();
-        if (rect.bottom <= window.innerHeight) {
-            // We've reached the end of options, make totalCost static
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+    
+        // Calculate the distance from the bottom of the document
+        const distanceFromBottom = documentHeight - (scrollPosition + windowHeight);
+    
+        // Define a threshold (e.g., 150 pixels from the bottom of the document)
+        const threshold = 150;
+    
+        if (distanceFromBottom <= threshold) {
+            // Close to the bottom of the document, make totalCost static
             totalCost.style.position = 'static';
         } else {
-            // Still scrolling through options, make totalCost fixed
+            // Not near the bottom, make totalCost fixed
             totalCost.style.position = 'fixed';
             totalCost.style.bottom = '0';
         }
     });
+    
 
     selectElements.forEach(select => {
         select.addEventListener('change', updateCostAndImage);
