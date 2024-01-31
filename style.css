@@ -201,3 +201,76 @@ body {
         margin: 10px;
     }
 }
+/* Additional CSS for Product Customization Page */
+
+.customization-section {
+    flex: 1;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.customization-option {
+    margin: 10px 0;
+}
+
+.customization-option label {
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.customization-option input[type="checkbox"], 
+.customization-option select {
+    margin-right: 10px;
+}
+
+#imageDisplay {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#displayImage {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+#totalCost {
+    background-color: #f8f9fa; /* Example background color */
+    border-top: 1px solid #dee2e6; /* Example border */
+    padding: 10px; /* Adjust padding as needed */
+    width: 100%; /* Full width */
+    /* Initially, don't set position fixed here, as it will be handled by JavaScript */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional: for better visibility */
+    z-index: 10; /* Ensure it's above other content */
+}
+
+#totalCost h3 {
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.customization-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .customization-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #totalCost {
+        margin: 10px;
+    }
+}
+
