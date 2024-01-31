@@ -209,7 +209,11 @@ select, input[type="checkbox"] {
 
 @media (max-width: 480px) {
     .header {
-        padding: 10px;
+        position: fixed; /* Fix position of the header */
+        top: 0; /* Align to top of the screen */
+        left: 0; /* Align to left of the screen */
+        width: 100%; /* Full width */
+        z-index: 1010; /* Ensure it's above other content */
     }
 
     .title {
@@ -227,5 +231,17 @@ select, input[type="checkbox"] {
         margin-bottom: 15px; /* Spacing after each label */
         font-size: 16px; /* Larger font size for readability */
         text-align: justify;
+    }
+   
+    #imageDisplay {
+        position: fixed; /* Fix position of the image */
+        top: 0; /* Align to top of the screen */
+        left: 0; /* Align to left of the screen */
+        width: 100%; /* Full width */
+        z-index: 1000; /* Ensure it's above other content */
+        background-color: white; /* Optional: background color behind the image */
+    }
+    .customization-container {
+        padding-top: 300px; /* Adjust based on the combined height of your image and header */
     }
 }
