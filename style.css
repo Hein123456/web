@@ -242,6 +242,6 @@ select, input[type="checkbox"] {
         background-color: white; /* Optional: background color behind the image */
     }
     .customization-container {
-        padding-top: 300px; /* Adjust based on the combined height of your image and header */
+        padding-top: 400px; /* Adjust based on the combined height of your image and header */
     }
 }
