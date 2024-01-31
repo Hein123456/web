@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Customization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="title">Product Customization</div>
+    </div>
+
+    <div class="customization-container">
+        <!-- Image Display Section -->
+        <div id="imageDisplay">
+            <img id="displayImage" src="" alt="Selected Image" style="max-width: 100%; height: auto;">
+
+        </div>
+
+        <!-- Customization Options Section -->
+     <!-- Customization Options Section -->
+<div class="customization-section">
+    <!-- Frame Cerakote Options -->
+    <h3>Frame Cerakote</h3>
+    <select name="frameCerakote">
+        <option value="0" selected>Choose Frame Cerakote Option</option>
+        <option value="1500">Frame cerakote one color - R 1 500,00</option>
+        <option value="3295">Frame cerakote Distressed - R 3 295,00</option>
+        <option value="3295">Frame cerakote Multicam - R 3 295,00</option>
+    </select>
+
+    <!-- Grip Engraving Options -->
+    <h3>Grip Engraving</h3>
+    <select name="gripEngraving">
+        <option value="0" selected>Choose Grip Engraving Option</option>
+        <option value="2300">Grip engraving Hybrid pattern - R 2 300,00</option>
+        <option value="2300">Grip engraving Star burst pattern - R 2 300,00</option>
+        <option value="1850">Grip engraving std pattern - R 1 850,00</option>
+        <option value="2300">Grip engraving White noise - R 2 300,00</option>
+    </select>
+
+    <!-- Slide Cerakote Options -->
+    <h3>Slide Cerakote</h3>
+    <select name="slideCerakote">
+        <option value="0" selected>Choose Slide Cerakote Option</option>
+        <option value="2300">Slide Cerakote Distressed - R 2 300,00</option>
+        <option value="2300">Slide Cerakote Multicam - R 2 300,00</option>
+        <option value="1300">Slide Cerakote one color - R 1 300,00</option>
+    </select>
+
+    <!-- Slide Milling Options -->
+    <h3>Slide Milling</h3>
+    <select name="slideMilling">
+        <option value="0" selected>Choose Slide Milling Option</option>
+        <option value="5300">Slide Milling Apex - R 5 300,00</option>
+        <option value="5300">Slide Milling Lunar - R 5 300,00</option>
+        <option value="5000">Slide Milling Talon - R 5 000,00</option>
+        <option value="5300">Slide Milling Talon Supreme - R 5 300,00</option>
+    </select>
+
+    <!-- Trigger Options -->
+    <h3>Trigger</h3>
+    <div class="customization-option">
+        <label><input type="checkbox" name="trigger" value="2995"> TR1 trigger Gen 1-4 - R 2 995,00</label>
+        <label><input type="checkbox" name="trigger" value="3295"> TR1 trigger Gen 5 - R 3 295,00</label>
+        <label><input type="checkbox" name="trigger" value="350"> Trigger Spring kit 4 pound competition - R 350,00</label>
+        <label><input type="checkbox" name="trigger" value="350"> Trigger Spring kit 5 pound carry - R 350,00</label>
+        <label><input type="checkbox" name="trigger" value="380"> Trigger Spring kit 2kg disconnector - R 380,00</label>
+    </div>
+
+    <!-- Ergonomics Options -->
+    <h3>Ergonomics</h3>
+    <div class="customization-option">
+        <label><input type="checkbox" name="ergonomics" value="825"> Double undercut - R 825,00</label>
+        <label><input type="checkbox" name="ergonomics" value="350"> Finger relieve - R 350,00</label>
+        <label><input type="checkbox" name="ergonomics" value="200"> Remove one finger groove gen 3/4 - R 200,00</label>
+    </div>
+</div>
+
+    </div>
+    <div id="endOfOptions">
+    <div id="totalCost">
+        <h3>Total Cost: <span id="price">0.00</span></h3>
+    </div></div>
+
+    <div class="footer">
+        Footer Content
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
